@@ -34,9 +34,25 @@ h1 {
   color: white;
 }
 
+.filter {
+  text-align: center;
+}
+
+.filter > button {
+  margin: 1rem;
+}
+
+.carousel-title {
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
+  color: #989898;
+}
+
 span.carousel-control-prev-icon,
 span.carousel-control-next-icon {
-  background-color: lightgray;
+  background-color: #989898;
   border-radius: 50%;
 }
 
