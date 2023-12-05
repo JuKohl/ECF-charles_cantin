@@ -10,40 +10,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,600&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">  <title>Charles Cantin - Photographe</title>
 </head>
 <body>
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <img id="image_icon" src="./img/icon.png" alt="logo du photographe Charles Cantin">
-  <h2 class="navbar-brand">Charles Cantin</h2>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="1-index.html">Accueil</a>
-      </li>
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="2-galery.html">Galerie</a>
-      </li>
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="3-prices.html">Tarifs et prestations</a>
-      </li>
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="4-form.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<header class="header">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img id="image_icon" src="./img/icon.png" alt="logo du photographe Charles Cantin">
+    <h2 class="navbar-brand">Charles Cantin</h2>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="1-index.html">Accueil</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="2-galery.html">Galerie</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="3-prices.html">Tarifs et prestations</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="4-form.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 <!-- main -->
 <main>
-<div class="container-fluid">
-  <div class="content text-center">
-    <h1>Charles Cantin - Photographe</h1>
-  </div>
+<!-- form -->
+<div id="form">
+  <h2>Formulaire de contact</h2>
+  <form class="form__contact" action="request.php" method="post" onsubmit="return validateEmail()">
+    <fieldset id="informations">
+      <legend><h2>Informations</h2></legend>
+      <div class="form__name">
+        <!-- nom prénom -->
+        <label for="nameAndSurname">Nom & prénom<sup>*</sup><small>(obligatoire)</small></label>
+        <input id="nameAndSurname" type="text" name="name" placeholder="Votre nom et votre prénom" required>
+      </div>
+      <div class="form__mail">
+        <!-- mail -->
+        <label for="email">E-mail<sup>*</sup><small>(obligatoire)</small></label>
+        <input id="email" type="email" name="email" placeholder="Votre email" required>
+      </div>
+    </fieldset>
+    <fieldset id="message">
+      <legend><h2>Message</h2></legend>
+      <div class="form__message">
+        <label for="subject">Message<sup>*</sup><small>(champ à remplir)</small></label>
+        <textarea id="subjectField" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
+      </div>
+      <!-- buttons -->
+      <div class="form__button">
+        <input data-formButtonSend class="btnSend" type="submit" name="buttonSend" value="Envoyer">
+        <input data-formButtonSendNo class="btnSendNo" type="reset" name="buttonSendNo" value="Annuler">
+      </div>
+    </fieldset>
+  </form>
 </div>
 </main>
 <!-- footer -->
-<footer>
+<footer class="footer">
   Suivez-moi sur les réseaux sociaux :<br>
   <a href="https://www.instagram.com/" target="_blank">
     <img src="./img/instagram.png" alt="logo d'instagram" class="img-fluid">
