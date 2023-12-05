@@ -18,6 +18,14 @@ body, html {
   width: auto;
 }
 
+.navbar-brand,
+.nav-link,
+.h2Prices,
+.footer {
+  color: #989898;
+}
+
+.navbar-brand,
 .nav-link {
   margin: 1rem;
 }
@@ -44,17 +52,28 @@ body, html {
 
 h1 {
   font-size: 6rem;
-  color: white;
+  color: rgba(248,249,250,1);
 }
 
 .p-text {
-  color: white;
+  color: rgba(248,249,250,1);
   font-size: 4rem;
 }
 
 h1,
-.carousel-title {
+.carousel-title,
+.h2Prices,
+.h2Form,
+legend,
+.labelForm {
   font-family: 'Courgette', cursive;
+}
+
+.h2Prices,
+.h2Form {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 .filter {
@@ -78,8 +97,96 @@ span.carousel-control-next-icon {
   border-radius: 50%;
 }
 
+/* form */
+
+#form, 
+label {
+  text-align: center;
+  color: #989898;
+}
+
+#form {
+  margin-bottom: 1rem;
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 75vw;;
+}
+
+sup {
+  color: red;
+}
+
+#informations, 
+#message {
+  border: #989898 solid 1.5px;
+  border-radius: 5px;
+  position: inherit;
+  width: auto;
+}
+
+fieldset > legend {
+  float: none;
+  width: auto;
+}
+
+input, 
+textarea {
+  border: #989898 solid 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.form__name, 
+.form__mail, 
+.form__message {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.form__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btnSend,
+.btnSendNo {
+  color: white;
+  border: 10px;
+  font-weight: bold;
+  border: solid 1px #989898;
+  margin-bottom: 0.5rem;
+}
+
+.btnSend {
+  background-color: #989898;
+}
+
+.btnSend:hover {
+  background: white;
+  color: #989898;
+  transition-duration: 0.5s;
+}
+
+.btnSendNo {
+  background-color: white;
+  color: red;
+}
+
+.btnSendNo:hover{
+  background: red;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+/* footer */
+
 footer {
-  background-color: #f8f8f8;
+  background-color: rgba(248,249,250,1);
   padding: 20px;
   text-align: center;
 }

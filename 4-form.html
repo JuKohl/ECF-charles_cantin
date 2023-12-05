@@ -37,34 +37,34 @@
   </nav>
 </header>
 <!-- main -->
-<main>
+<main class="container-fluid">
 <!-- form -->
 <div id="form">
-  <h2>Formulaire de contact</h2>
+  <h2 class="h2Form">Formulaire de contact</h2>
   <form class="form__contact" action="request.php" method="post" onsubmit="return validateEmail()">
     <fieldset id="informations">
       <legend><h2>Informations</h2></legend>
       <div class="form__name">
         <!-- nom prénom -->
-        <label for="nameAndSurname">Nom & prénom<sup>*</sup><small>(obligatoire)</small></label>
+        <label class="labelForm" for="nameAndSurname">Nom & prénom<sup>*</sup><small>(obligatoire)</small></label>
         <input id="nameAndSurname" type="text" name="name" placeholder="Votre nom et votre prénom" required>
       </div>
       <div class="form__mail">
         <!-- mail -->
-        <label for="email">E-mail<sup>*</sup><small>(obligatoire)</small></label>
+        <label class="labelForm" for="email">E-mail<sup>*</sup><small>(obligatoire)</small></label>
         <input id="email" type="email" name="email" placeholder="Votre email" required>
       </div>
     </fieldset>
     <fieldset id="message">
       <legend><h2>Message</h2></legend>
       <div class="form__message">
-        <label for="subject">Message<sup>*</sup><small>(champ à remplir)</small></label>
+        <label class="labelForm" for="subject">Message<sup>*</sup><small>(champ à remplir)</small></label>
         <textarea id="subjectField" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
       </div>
       <!-- buttons -->
       <div class="form__button">
-        <input data-formButtonSend class="btnSend" type="submit" name="buttonSend" value="Envoyer">
-        <input data-formButtonSendNo class="btnSendNo" type="reset" name="buttonSendNo" value="Annuler">
+        <input data-formButtonSend class="btnSend btn-block" type="submit" name="buttonSend" value="Envoyer">
+        <input data-formButtonSendNo class="btnSendNo btn-block" type="reset" name="buttonSendNo" value="Annuler">
       </div>
     </fieldset>
   </form>
