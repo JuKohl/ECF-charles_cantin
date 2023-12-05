@@ -51,13 +51,11 @@ body, html {
 }
 
 h1 {
-  font-size: 6rem;
   color: rgba(248,249,250,1);
 }
 
 .p-text {
   color: rgba(248,249,250,1);
-  font-size: 4rem;
 }
 
 h1,
